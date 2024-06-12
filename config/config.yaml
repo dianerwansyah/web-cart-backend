@@ -1,0 +1,7 @@
+server:
+  iam_port: 8081
+  trx_port: 8082
+  setup_port: 8083
+  jwt_secret: "your_secret_key"
+  mongo_uri: "mongodb://localhost:27017"
+  mongo_db: "webcart"

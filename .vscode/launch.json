@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch IAM Service",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "D:\\web-cart\\backend\\app\\iam\\main.go",      
+      "env": {},
+      "args": []
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch All Services",
+      "configurations": [
+        "Launch IAM Service"
+      ]
+    }
+  ]
+}
