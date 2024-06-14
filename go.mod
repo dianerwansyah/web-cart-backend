@@ -1,6 +1,8 @@
-module github.com/dianerwansyah/web-cart/backend
+module github.com/dianerwansyah/web-cart-backend
 
 go 1.22.3
+
+replace github.com/dianerwansyah/web-cart-backend => ../backend
 
 require (
 	github.com/golang-jwt/jwt v3.2.2+incompatible

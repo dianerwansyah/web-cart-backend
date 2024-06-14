@@ -1,4 +1,4 @@
-package iam
+package setup
 
 import (
 	"log"
@@ -14,8 +14,8 @@ func StartServer() {
 	// Apply CORS middleware
 	corsRouter := helper.CORSMiddleware(r)
 
-	log.Printf("Starting IAM service on port %s...", cfg.Server.IamPort)
-	if err := http.ListenAndServe(":"+cfg.Server.IamPort, corsRouter); err != nil {
-		log.Fatalf("Failed to start IAM server: %v", err)
+	log.Printf("Starting Setup service on port %s...", cfg.Server.SetupPort)
+	if err := http.ListenAndServe(":"+cfg.Server.SetupPort, corsRouter); err != nil {
+		log.Fatalf("Failed to start server: %v", err)
 	}
 }
